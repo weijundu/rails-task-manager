@@ -1,3 +1,44 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.wrapper {
+  margin: 50px 100px;
+  font-size: 16px;
+  ul {
+    list-style: none;
+    padding-left: 25px;
+    margin: 20px 0px;
+  }
+}
+
+.form-check-input {
+  transform: scale(1.5);
+}
+
+.form-check-label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form-session {
+  width: 500px;
+}
+
+.head-box {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-box {
+  width: 500px;
+  height: 80px;
+  background-color: rgb(230, 230, 230);
+  padding: 10px;
+  border-radius: 3px;
+}
+

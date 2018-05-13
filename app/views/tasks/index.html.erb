@@ -1,0 +1,17 @@
+<h1>My task</h1>
+<ul>
+  <% @tasks.each do |t| %>
+  <li>
+    <div class="checkbox">
+        <input type="checkbox" class="filled-in form-check-input" id="checkbox103" <%="checked" if t.completed%> disabled>
+        <label for="checkbox103" class="disabled form-check-label">
+          <%= link_to t.title, task_path(t) %>
+          <%= link_to "remove", task_path(t), method: :delete,  class: "btn btn-secondary"%>
+        </label>
+    </div>
+
+
+  </li>
+  <% end %>
+</ul>
+<%= link_to "Add a new task", new_task_path %>

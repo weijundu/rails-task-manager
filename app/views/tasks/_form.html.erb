@@ -1,0 +1,22 @@
+<h1>New task</h1>
+<br>
+<%= form_for(@task) do |f| %>
+<div class="form-session">
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= f.label :details %>
+    <%= f.text_area :details, class: 'form-control'%>
+  </div>
+  <br>
+
+
+    <%= f.check_box checked = :completed%>
+    <%= f.label "Completed" %><br><br>
+    <%= f.submit class: 'btn btn-primary'%><br><br>
+  <% end %>
+  <%= link_to "Back to list", tasks_path %>
+</div>
